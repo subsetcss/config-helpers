@@ -1,0 +1,1 @@
+export { default as getVariables } from './get-variables';
