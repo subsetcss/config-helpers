@@ -7,15 +7,19 @@ Helpers for building out `.subsetcss.js` config files.
 ### `getVariables`
 
 ```js
-import { getVariables } from '@subsetcss/config-helpers';
-// or
 const { getVariables } = require('@subsetcss/config-helpers');
 
-let variables = getVariables('app/styles/variables.scss');
-// variables = [
-//   { key: '$variableA': value: 'red' },
-//   { key: '$variableB': value: 'blue' }
+let colors = getVariables('app/styles/variables.scss');
+// colors = [
+//   { key: '$primary': value: 'red' },
+//   { key: '$secondary': value: 'blue' }
 // ]
+
+module.exports = {
+  subsets: {
+    color: colors.map(c => c.key)
+  }
+};
 ```
 
 ## Contributing
