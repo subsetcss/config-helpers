@@ -22,6 +22,8 @@ module.exports = {
 };
 ```
 
+Works for files ending in `.scss` and `.less`.
+
 ## Contributing
 
 Check out the [Contributing guide](CONTRIBUTING.md).
