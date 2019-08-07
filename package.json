@@ -1,7 +1,7 @@
 {
   "name": "@subsetcss/config-helpers",
   "description": "Helpers for building out `.subsetcss.js` config files.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "module": "dist/subsetcss-config-helpers.esm.js",
   "typings": "dist/index.d.ts",
